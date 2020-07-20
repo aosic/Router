@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.author        = { "aosic" => "724315346@qq.com" }
   spec.source        = { :git => "https://github.com/aosic/Router.git", :tag => "#{spec.version}" }
 
-  spec.framwworks    = 'UIKit', 'Foundation'
+  spec.frameworks    = 'UIKit', 'Foundation'
   spec.swift_version = "5.0"
   spec.requires_arc  = true
   spec.source_files  = "Sources/**/*.swift"
