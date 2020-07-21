@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double RouterVersionNumber;
-FOUNDATION_EXPORT const unsigned char RouterVersionString[];
+FOUNDATION_EXPORT double ACRouterVersionNumber;
+FOUNDATION_EXPORT const unsigned char ACRouterVersionString[];
 

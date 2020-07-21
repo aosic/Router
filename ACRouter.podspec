@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name          = "Router"
+  spec.name          = "ACRouter"
   spec.version       = "0.0.1"
   spec.summary       = "一个便捷的Swift版本Swift&OC通用的轻量的路由工具"
   spec.homepage      = "https://github.com/aosic/Router"
