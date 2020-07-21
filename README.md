@@ -3,5 +3,5 @@
 
 
 ```
-pod 'Router', :git => 'https://github.com/aosic/Router', :tag => '0.0.1'
+pod 'Router', :git => 'https://github.com/aosic/Router', :tag => '0.0.2'
 ```

@@ -41,7 +41,7 @@ import UIKit
         return Router.shared.storeCache[key] != nil
     }
 
-    @objc public static func open(_ url: String, params: Dictionary<String, Any>? = nil) {
+    @objc public static func open(url: String, params: Dictionary<String, Any>? = nil) {
         if let header = Router.shared.urlProtocolHeader {
             if !url.hasPrefix(header) {
                 Router.shared.errorHandler?("路由调用\(url)未使用\(header)协议头")
@@ -60,7 +60,7 @@ import UIKit
         let key = U!.host! + U!.path + ":\(U!.port!)"
         let v = Router.shared.storeCache[key]!
 
-        let urlParams = url.urlQueryConvertDictionary()
+        let urlParams = U!.urlQuery() as [String: Any]
         let routerParams = urlParams.merging(params ?? [:]) { (_, new) in new }
         
         if v is String {
@@ -95,7 +95,7 @@ import UIKit
     }
     
 }
-// 获取顶部控制器
+
 public extension Router {
     @objc class func topViewController() -> UIViewController{
         let rootVc = UIApplication.shared.windows.first?.rootViewController
