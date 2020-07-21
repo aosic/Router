@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Router.open("router://router:3003?")
+        Router.open(url: "router://router:3003?")
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            Router.open("router://router:3004?")
+            Router.open(url: "router://router:3006?")
         }
     }
 

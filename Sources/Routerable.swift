@@ -11,3 +11,7 @@ import Foundation
 @objc public protocol Routerable {
     func routerUpdate(params: Dictionary<String, Any>?)
 }
+
+@objc public protocol AutoRouterable {
+    static var autoRouterKey: String {get}
+}

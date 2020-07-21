@@ -119,3 +119,32 @@ public extension Router {
         return currentVc
     }
 }
+
+public extension Router {
+    
+    static func autoRegister(with appDelegate: UIApplicationDelegate) {
+        var count: UInt32 = 0
+        guard let image = class_getImageName(object_getClass(appDelegate)),
+            let classes = objc_copyClassNamesForImage(image, &count) else {
+                print("ERROR, 应用未正常启动")
+                return
+        }
+        
+        for i in 0 ..< Int(count) {
+                
+            if let c = String(cString: classes[i], encoding: .utf8) {
+                if let cls:AnyClass = NSClassFromString(c) {
+                    if cls is AutoRouterable.Type {
+                        let autoCls = cls as! AutoRouterable.Type
+                        let key = autoCls.autoRouterKey
+                        Router.shared.storeCache.updateValue(c, forKey: key)
+                    }
+
+                }
+                
+            }
+
+        }
+    }
+    
+}

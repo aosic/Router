@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Router.autoRegister(with: self)
         Router.shared.urlProtocolHeader = "router://"
         Router.shared.errorHandler = {
             (text) in
