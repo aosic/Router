@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
-  spec.name          = "ACRouter"
-  spec.version       = "0.0.1"
+  spec.name          = "BSHRouter"
+  spec.version       = "0.0.5"
   spec.summary       = "一个便捷的Swift版本Swift&OC通用的轻量的路由工具"
   spec.homepage      = "https://github.com/aosic/Router"
   spec.license       = { :type => "MIT", :file => "FILE_LICENSE" }

@@ -1,0 +1,6 @@
+framework module BSHRouter {
+  umbrella header "BSHRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

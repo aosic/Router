@@ -1,16 +1,16 @@
 PODS:
-  - ACRouter (0.0.1)
+  - BSHRouter (0.0.1)
 
 DEPENDENCIES:
-  - ACRouter (from `../`)
+  - BSHRouter (from `../`)
 
 EXTERNAL SOURCES:
-  ACRouter:
+  BSHRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACRouter: 8d84e2c6d4058979ebbfc399eb0fd16657db4ec3
+  BSHRouter: 88d98266ea0fc12874906fe0a0f9976a4a0f7699
 
-PODFILE CHECKSUM: 33b345aab4ea7e5d5a29b394fc7e62dccbbe2e6e
+PODFILE CHECKSUM: 5b1de8c3e545382a07c85c4e5e0f1dd2a4d00c7d
 
 COCOAPODS: 1.9.3

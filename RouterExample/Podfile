@@ -3,7 +3,7 @@
 
 target 'RouterExample' do
   use_frameworks!
-  pod 'ACRouter', :path => '../'
+  pod 'BSHRouter', :path => '../'
 
 
 end
